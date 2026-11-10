@@ -1,0 +1,91 @@
+experiment_id=20261004-173150
+repeats=3
+threads=1
+beamwidth=8
+topk=10
+pipeann_high_l=20 40 80
+pipeann_representative_l=40
+gateann_high_l=160 320 640
+gateann_representative_l=320
+io_backend=aio
+pipeann_repo=/home/liuliyuan/cs_system_lab/fvs-course-lab/systems/PipeANN
+pipeann_commit=2ec84fe20c37dc3cc236b66f7eba31c0cc80bf1e
+gateann_repo=/home/liuliyuan/cs_system_lab/fvs-course-lab/systems/GateANN-public
+gateann_commit=71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd
+gateann_patch_sha256=d90657151bf1adc735bc6916e4120690a64288281fe76ac24ad2e4a859662bc1  /home/liuliyuan/cs_system_lab/fvs-course-lab/patches/gateann_aio_compat.patch
+
+[uname]
+Linux liuliyuan-virtual-machine 6.8.0-138-generic #138~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Aug  7 13:43:15 UTC  x86_64 x86_64 x86_64 GNU/Linux
+
+[lscpu]
+Architecture:                            x86_64
+CPU op-mode(s):                          32-bit, 64-bit
+Address sizes:                           45 bits physical, 48 bits virtual
+Byte Order:                              Little Endian
+CPU(s):                                  4
+On-line CPU(s) list:                     0-3
+Vendor ID:                               AuthenticAMD
+Model name:                              AMD Ryzen 7 6800H with Radeon Graphics
+CPU family:                              25
+Model:                                   68
+Thread(s) per core:                      1
+Core(s) per socket:                      1
+Socket(s):                               4
+Stepping:                                1
+BogoMIPS:                                6387.83
+Flags:                                   fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx mmxext pdpe1gb rdtscp lm constant_tsc rep_good nopl tsc_reliable nonstop_tsc cpuid extd_apicid tsc_known_freq pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 x2apic movbe popcnt aes xsave avx f16c rdrand hypervisor lahf_lm cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw topoext ibpb vmmcall fsgsbase bmi1 avx2 smep bmi2 invpcid rdseed adx smap clflushopt clwb sha_ni xsaveopt xsavec xgetbv1 xsaves clzero arat umip vaes vpclmulqdq rdpid overflow_recov succor
+Hypervisor vendor:                       VMware
+Virtualization type:                     full
+L1d cache:                               128 KiB (4 instances)
+L1i cache:                               128 KiB (4 instances)
+L2 cache:                                2 MiB (4 instances)
+L3 cache:                                64 MiB (4 instances)
+NUMA node(s):                            1
+NUMA node0 CPU(s):                       0-3
+Vulnerability Gather data sampling:      Not affected
+Vulnerability Indirect target selection: Not affected
+Vulnerability Itlb multihit:             Not affected
+Vulnerability L1tf:                      Not affected
+Vulnerability Mds:                       Not affected
+Vulnerability Meltdown:                  Not affected
+Vulnerability Mmio stale data:           Not affected
+Vulnerability Reg file data sampling:    Not affected
+Vulnerability Retbleed:                  Not affected
+Vulnerability Spec rstack overflow:      Vulnerable: Safe RET, no microcode
+Vulnerability Spec store bypass:         Vulnerable
+Vulnerability Spectre v1:                Mitigation; usercopy/swapgs barriers and __user pointer sanitization
+Vulnerability Spectre v2:                Mitigation; Retpolines; IBPB conditional; STIBP disabled; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+Vulnerability Srbds:                     Not affected
+Vulnerability Tsa:                       Vulnerable: Clear CPU buffers attempted, no microcode
+Vulnerability Tsx async abort:           Not affected
+Vulnerability Vmscape:                   Not affected
+
+[memory]
+               total        used        free      shared  buff/cache   available
+Mem:           7.7Gi       1.0Gi       177Mi        43Mi       6.5Gi       6.3Gi
+Swap:          2.1Gi       0.0Ki       2.1Gi
+
+[block-devices]
+NAME   MODEL                            SIZE ROTA TRAN
+fd0                                       4K    1 
+loop0                                     4K    1 
+loop1                                 517.6M    1 
+loop2                                  63.8M    1 
+loop3                                  74.3M    1 
+loop4                                 505.1M    1 
+loop5                                 271.2M    1 
+loop6                                  91.7M    1 
+loop7                                  12.9M    1 
+loop8                                  38.8M    1 
+loop9                                   500K    1 
+loop10                                 44.7M    1 
+sda    VMware Virtual S                  50G    1 spi
+sr0    VMware Virtual SATA CDRW Drive 156.4M    1 sata
+sr1    VMware Virtual SATA CDRW Drive   4.4G    1 sata
+
+[compiler]
+c++ (Ubuntu 11.4.0-1ubuntu1~22.04.3) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
