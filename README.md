@@ -8,7 +8,7 @@ Computer Systems Design Course Lab
 
 实验采用 YFCC 百万规模向量数据集，在不同过滤选择率（Selectivity）和搜索参数（L）下，分析两个系统的检索准确率、查询延迟、吞吐量、逻辑 I/O 开销及资源占用情况。
 
-本仓库在原始课程项目的基础上，增加了正式实验结果、环境记录和 GateANN 兼容性修复补丁，并对实验现象与潜在优化方向进行了分析。
+本仓库在原始课程项目的基础上，增加了正式实验结果、环境记录和 GateANN 兼容性修复补丁，并实现了选择率感知的负载级搜索预算调度，完成补充对照实验与成本分析。
 
 ## 2. 与原始课程仓库的区别
 
@@ -23,7 +23,7 @@ Computer Systems Design Course Lab
 | 性能分析 | 比较 Recall@10、Latency、QPS 和逻辑 I/O |
 | 兼容性修复 | 保存 GateANN Linux AIO 相关源码补丁 |
 | 实验材料 | 新增正式实验结果 CSV 和环境信息 |
-| 优化分析 | 提出基于 Selectivity 的自适应搜索预算方案 |
+| 优化实现与验证 | 实现负载级 Selectivity-aware 预算选择，完成8个配置×3次补充实验并分析准确率与成本 |
 
 **说明：** 本项目的主要工作是实验复现、系统对比及性能分析，不声称重新实现 PipeANN 或 GateANN 的核心搜索算法。
 
@@ -143,13 +143,73 @@ Computer Systems Design Course Lab
 
 大型数据集、预构建索引、编译产物及运行时目录未包含在本仓库中，需要按照课程原始说明另行准备。
 
-## 8. 优化方向
+<a id="gateann-budget-experiment"></a>
 
-根据实验中 GateANN 在强过滤负载下 Recall 降低的现象，提出一种基于 Selectivity 的自适应搜索预算方案。
+## 8. GateANN 选择率感知预算优化实验
 
-基本思路是在过滤选择率较低时分配更大的搜索预算，以尝试改善过滤条件下的候选节点探索能力；在选择率较高时维持较小预算，控制查询开销。
+**状态：已实现负载级预算选择，并完成24次补充测量。** 该实现复用课程适配器，在每档查询前选择 L；尚未修改 GateANN 内核以实现逐查询自适应。
 
-**本优化方案目前属于设计与分析阶段，尚未完成实现及补充实验验证，不构成已证实的性能提升。**
+### 8.1 策略与代码
+
+令 s 为过滤选择率（比例值），采用以下预设候选规则：
+
+| 条件 | L | 本次对应负载 |
+|---|---:|---|
+| s < 0.01 | 640 | Low |
+| 0.01 ≤ s < 0.05 | 480 | Medium |
+| s ≥ 0.05 | 320 | High |
+
+策略实现见 [adaptive_budget.py](optimization/adaptive_budget.py)，运行与核验见 [experiment.py](optimization/experiment.py)。运行前检查负载内所有选择率是否处于同一分段；跨阈值时停止。本规则与预算值尚未被证明最优。
+
+### 8.2 实验设置
+
+YFCC 1M×192D uint8，每档200条查询；threads=1、beamwidth=8、K=10、mem_L=0、cache_budget=0、full_adj_neighbors=32，AIO后端。Low和Medium分别测试L=320/480/640，High测试320/640，共8个配置，每个重复3次。三种策略引用同批观测，避免重复跑基线。
+
+下表使用本轮三次运行的中位数；括号内为相对同期固定320的Recall增量。第5节保留原正式实验，其延迟不与本轮混用。
+
+| 负载 | adaptive L | Recall 固定320 → adaptive | 延迟 ms 固定320 → adaptive | 逻辑 I/O 固定320 → adaptive |
+|---|---:|---|---|---|
+| Low | 640 | 34.30% → 51.80%（+17.50个百分点） | 2.222 → 3.968 | 4.38 → 7.72 |
+| Medium | 480 | 72.05% → 81.30%（+9.25个百分点） | 4.739 → 7.246 | 16.75 → 24.36 |
+| High | 320 | 93.20% → 93.20%（共享同组观测） | 10.101 → 10.101 | 46.69 → 46.69 |
+
+### 8.3 准确率与成本的折中
+
+以下是三档各200查询的**离线合成**，不是实际交错混合查询流测试。每个repeat先合成，再取三次中位数；QPS按总查询数除以总查询时间计算。
+
+| 策略 | Recall@10 | 延迟 (ms) | QPS | 逻辑 I/O/查询 |
+|---|---:|---:|---:|---:|
+| 固定320 | 66.52% | 5.621 | 177.91 | 22.61 |
+| adaptive 640/480/320 | 75.43% | 7.338 | 136.27 | 26.26 |
+| 固定640 | 79.18% | 11.817 | 84.62 | 42.85 |
+
+相对固定320，adaptive 的Recall增加8.92个百分点，延迟增加30.56%；相对固定640，延迟降低37.90%、逻辑I/O降低38.72%，但Recall低3.75个百分点。因此，本次验证支持准确率与开销的折中，不构成全面提速或最优策略的证明。Low在L=640下Recall仍只有51.80%，强过滤问题尚未解决。
+
+延迟为课程适配器依据查询阶段QPS计算的1000/QPS，不含进程加载总耗时，也不是P99。逻辑I/O不是物理磁盘读取次数。三次运行波动不可忽略；尚未比较完整的固定480方案，也未测量逐查询预算选择的在线开销。
+
+![GateANN Recall 与延迟对照](docs/assets/gateann-budget/recall_latency.png)
+
+图中点为中位数，横线为min–max；各子图横轴范围不同。完整8组结果、波动范围和局限见[补充实验说明](docs/gateann-budget-results.md)。
+
+### 8.4 复现与结果
+
+在数据、索引和GateANN已准备的课程仓库根目录执行：
+
+```bash
+python3 optimization/experiment.py check
+bash scripts/optimization/run_budget_sweep.sh
+```
+
+已有结果只需运行 `python3 optimization/experiment.py analyze --experiment-dir course_runs/optimization/<实验ID>`，无需重复查询。环境、缓存要求和完整操作见 [START_HERE](optimization/START_HERE.md)。
+
+本次实验ID：`budget-20261110-143518-ec7e5e19`。已核对24次运行与72个原始文件哈希，证据包含：
+
+- [原始测量汇总](experiments/optimization/budget-20261110-143518-ec7e5e19/measurements.csv)
+- [预算扫描 median/min/max/range](experiments/optimization/budget-20261110-143518-ec7e5e19/sweep_summary.csv)
+- [三策略 median/min/max/range](experiments/optimization/budget-20261110-143518-ec7e5e19/strategy_summary.csv)
+- [运行 manifest](experiments/optimization/budget-20261110-143518-ec7e5e19/manifest.json)与[归档文件索引](experiments/optimization/budget-20261110-143518-ec7e5e19/ARTIFACTS.json)
+
+数据集、索引、编译产物和第三方系统源码不包含在该证据目录中。
 
 ## 9. 仓库结构
 
@@ -161,6 +221,9 @@ Computer Systems Design Course Lab
 - `tests/`：测试代码
 - `experiments/20261004-173150/`：本次正式实验结果及环境记录
 - `patches/`：GateANN Linux AIO 兼容性补丁
+- `optimization/` 与 `scripts/optimization/`：预算策略、运行器与测试
+- `docs/gateann-budget-results.md`：补充实验说明
+- `experiments/optimization/budget-20261110-143518-ec7e5e19/`：优化实验结果、manifest与原始日志
 
 PipeANN 与 GateANN 的完整上游源码位于本地实验环境的 `systems/` 目录中，该目录未作为本仓库的普通 Git 文件提交。
 
