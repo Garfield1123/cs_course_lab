@@ -1,0 +1,366 @@
+{
+  "experiment_id": "budget-20261110-143518-ec7e5e19",
+  "source_archive_sha256": "ea8c7a95cd8d9c00ca9aba38c578cc1e882f83e00bad3a59d3b5e78f180b9f23",
+  "files": [
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r1/command.json",
+      "sha256": "bc790b74635cad44ff22d77754666951a6711ae2ddcf0056a0a1d56677bda58c"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r1/run.log",
+      "sha256": "f772cc33c73583e30724484fddff5edcf7ff81ef33fab857cc73971215cdb676"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r1/results.csv",
+      "sha256": "9aa6f64d0600fe51cddf89e48a0b9c4de06622c8d307f32a519740e3900e4d96"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r1/command.json",
+      "sha256": "36af3014f26041d9a7f895d250a430a3566cdcc73b33bc0d0d6fc982205a77c1"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r1/run.log",
+      "sha256": "d412c58f306a4aaf59c93bd604d0fd5cb0977be74b029c471f61595ffa1e41dc"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r1/results.csv",
+      "sha256": "bd9207ecec3115ac4afc61de3fd853fb6bb65ac8861df254107c93e3e436577c"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r1/command.json",
+      "sha256": "cdde6a055b1edc74248df330d13480b1926abfbc9d7daa862f668bea5ebdb5b7"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r1/run.log",
+      "sha256": "49ca908b7471753bae869aafb6a5b9a1f2960942269c9e6b53ae465a970cf65e"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r1/results.csv",
+      "sha256": "d5d9fbcd51decc95ab5bb8a9f65734b15a678e6cab05f537bb0418edefba6cca"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/command.json",
+      "sha256": "e34642766b8f2d6f4a9a1f2584702913c914d99128b502683b10ed0620aa55cb"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/run.log",
+      "sha256": "e1870eb062001dd1ef3e0885c0003112869c3d47d8e13d39fe9abb164c8ad8d2"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r1/results.csv",
+      "sha256": "e692849c6af5651b290e8918c133c80c7e8e82bb12179dd67d479ec381c8ed5c"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r1/command.json",
+      "sha256": "06b59fd2627600ca874ed61aabe667a8865859095e23d4bdbb8f64504c021e5d"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r1/run.log",
+      "sha256": "450624a41c7db678e1a19046b66e7d6b53444e3710893aee96b0533350aa0423"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r1/results.csv",
+      "sha256": "a62250d8bca230228d64c9720d70e03e75369684afb24d93cd58f7adb8750554"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r1/command.json",
+      "sha256": "bb61b7c1a0c719e766f2d38c3d22729f790444d0510684997d18b78fe7182ece"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r1/run.log",
+      "sha256": "84c67e0fbb62d2cbe002fa206ae2f68dd1942d6d7fb52ec4a768d4b11cb2b020"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r1/results.csv",
+      "sha256": "252ee3cb010a28ca704600f04579515fa53b378c123c5784d826500e251c589f"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/command.json",
+      "sha256": "c7e1cf6711c7f4211addee335c0bc1278ee221291e99124de924778464d935d1"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/run.log",
+      "sha256": "059cbfc16787ed8e797d40f68bbeee0c8ac83f11f3458561de1c0766232f73d9"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r1/results.csv",
+      "sha256": "967f0c4f88ec35f261d6d59ba66ccf61892078c178e5c2bb96c54c65deda11df"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/command.json",
+      "sha256": "93cbc7096cd6ea83ccd0b213ccc9338d41327082a94e5a8560af7f45de2c2858"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/run.log",
+      "sha256": "40de30c92df4a0b23409dbdb743c5845250d76dc34c6865f87e22f1c2b363f1a"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r1/results.csv",
+      "sha256": "b916339d11f4722c3ca4e27175358b635ee443617c23455395e2b3bc100b3e44"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r2/command.json",
+      "sha256": "06a3e8f7e9a7ecbc63953bfd1d4f0c4ab11335d7a370b11e3b55302afdead947"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r2/run.log",
+      "sha256": "70b4e42c378cba0ce34622842377323c1f339db072b380d0f939ef3ff3d0f4c5"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r2/results.csv",
+      "sha256": "2860e3aa2c31645e1c6fdf630249900cd15d8a4af412388630aa5d634003f025"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r2/command.json",
+      "sha256": "7a915f810eaf4eb4d8aa4dd20a48be031eda69e5917c2da0afffc656cfb19996"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r2/run.log",
+      "sha256": "b426dd503d49ca495688e9da6895ffbfe2a494725799dff38376960ebe6d6538"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r2/results.csv",
+      "sha256": "de5f0577cd91b5e0e025b20c527032a56c86eed07475881f73137c639a4635d4"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/command.json",
+      "sha256": "bb85ff3504485524c928795a1a3473bbe8b12647840de0611ba0ee6a7befa0fa"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/run.log",
+      "sha256": "012be1018e068d0aef0d54d540575f2c877b819d55489469049734cc004efc32"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r2/results.csv",
+      "sha256": "ae8e91e8cdc32deb9300c698eec93dcbc2d38fae41f2364d0919572e3e2cc8ee"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r2/command.json",
+      "sha256": "70df1fc23846f1c83ab5a70362421dce5357751da74587b28eb816bc569b6521"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r2/run.log",
+      "sha256": "1a76806fa5d77e466d0eb76020bd2dc94f0f2245dde86866bf21b1355a013527"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r2/results.csv",
+      "sha256": "fb1558bc0f8d5a7889eff895e9b002cca14cd3076ca261a6e8f94b78d3661fb1"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r2/command.json",
+      "sha256": "2acee2bfa8c6f028f116ed478014a6f88c170785807a58e5f1e334bad32ebbbf"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r2/run.log",
+      "sha256": "59e40fb61ce736eeba52e7c1111b59fa4a800ddfc0dc4ef27a35c79191af6c54"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r2/results.csv",
+      "sha256": "979dda03bacc1f7158cf73baf1688761d5fd03cfa347805f081cc558ab73907d"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/command.json",
+      "sha256": "54fc2a23c8db25a52d6d6598b6b85dc33eed4ba2630af0c604c77e41f0664633"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/run.log",
+      "sha256": "c9383d640589d24f534606c3d44c7dbbe5c9459de16472a0f89f391e3592735c"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r2/results.csv",
+      "sha256": "aa1d7efb649acbc24bf59179ecce40889d1843d321e5e0bdfbf818047ce260dd"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r2/command.json",
+      "sha256": "d02cac75fd1aecbf4513aae160cd3acf4080d2b9f10ce3630d692d691585bca9"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r2/run.log",
+      "sha256": "4cdbf4cd8fc218df9b373bbc614c54d9a33fa2e0caeb7aef359e0f8b8ba4472b"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r2/results.csv",
+      "sha256": "77e50224e99854f1b11d396a2e495641558fd6084ccd37ed76151e0b52d6b931"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/command.json",
+      "sha256": "17d36a526cdce75b6a1e8577d2b03d90479e04a7e8c243ce7674ed27ff294da3"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/run.log",
+      "sha256": "5a238b6e6d4b57764b8a0d1ca7031b3d0fcaf9798af604276f0a9f0456df2a91"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r2/results.csv",
+      "sha256": "4e138f59c477e1512a37294e513df634cf750d700c4dd8be7ab5e5ea640b04a4"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r3/command.json",
+      "sha256": "39ed50b084af2fb392e540c95abc84da207d30e107973eb322f9fa3c1071adbb"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r3/run.log",
+      "sha256": "fe31fc469586573e9ea8ae1a9ca37c264809c90c1243f0172d58e101f2d308e1"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L320-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L320-r3/results.csv",
+      "sha256": "de2b3cd4cd3b9d05008d109975b863b2c386c041c20dfeb75060dee9258b8520"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r3/command.json",
+      "sha256": "aac2ed6fc9a153afac8d8cf1f29248714cc38c1e5c6bde08da6eb4bea926d8b2"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r3/run.log",
+      "sha256": "b6a8b664bdb25a7286a878f25440d9a43f195c33a425fb3beef207fca4f46ab5"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L480-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L480-r3/results.csv",
+      "sha256": "eb6913bd0cd7d3b1a433082d7b29fe0aaebf7b39bdc25b52bc164a2245cb5151"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r3/command.json",
+      "sha256": "3d975993f790c2ca4db45ab01b431d15750daf70d4f1416b649e771357093d96"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r3/run.log",
+      "sha256": "12b825e08fe079275292b4b97282cac6794fd5b75a8bd39e89aea7021eaf1fd0"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L320-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L320-r3/results.csv",
+      "sha256": "b866a137600da74ccc549abb542b22894b9ccd0317f13dcc5efd28a88f99e629"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/command.json",
+      "sha256": "2697f45dba7386a0014a0e5ca6dac3e32443e6c86d949d41d79e797d36df9c48"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/run.log",
+      "sha256": "416c74944ebe77dbc8b328f6ba9151df4404bcedcc2e95a01f30b323be04c191"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L320-r3/results.csv",
+      "sha256": "77f7ff4fc03b8052f0a51d8a8bfd520d78a6b2a5add779210e1daec983d6656f"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/command.json",
+      "sha256": "0bd66c4087d982390fdeca42d04b12255ee3eb971547f2ba12d9df134ff03848"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/run.log",
+      "sha256": "f7a9d45fd5a839d9296211858f62f2ea673d44d8777a8aad92e83fd935dd41ac"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L480-r3/results.csv",
+      "sha256": "b923c6008f1ca27f4caf878297f304e415ae32ae9efaf537c818ebfec566916d"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/command.json",
+      "sha256": "fc378bb837dab1a947d67f9e99fb42dc9857195bcbb5b3421502cd69cc47b8ef"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/run.log",
+      "sha256": "cbfcc805a82c18143f03dfd262ed2c9d939fc6f9812e32dde24baaf62cf683e6"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/medium/budget-20261110-143518-ec7e5e19-medium-L640-r3/results.csv",
+      "sha256": "3ce8cc2d7c4792ba554f8a5fc3e201da54e03e332d5de9f089b234b265397448"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r3/command.json",
+      "sha256": "613890742296aa87d7a453569935547437219bff4714477c0c382a564e0280c6"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r3/run.log",
+      "sha256": "c0908d8febdab9e4f574fea6b60feeb7806d4e10bc62c426f444391b8dbf75fc"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/high/budget-20261110-143518-ec7e5e19-high-L640-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/high/budget-20261110-143518-ec7e5e19-high-L640-r3/results.csv",
+      "sha256": "423e073cac4eb2151e642098a699793740c9e6c5496fea0c2d422651dd5cd517"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r3/command.json",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r3/command.json",
+      "sha256": "88cace6581f331651c57595b41aeaabcdb9662363b500bd839c1bdf03afd2611"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r3/run.log",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r3/run.log",
+      "sha256": "d0a3851987ec2a148a24bedc0042d8865b56610eb8e2296ec2e82db4dc4e2ece"
+    },
+    {
+      "original_path": "/home/liuliyuan/cs_system_lab/fvs-course-lab/course_runs/results/gateann/formal_1000000/low/budget-20261110-143518-ec7e5e19-low-L640-r3/results.csv",
+      "repository_path": "experiments/optimization/budget-20261110-143518-ec7e5e19/raw/low/budget-20261110-143518-ec7e5e19-low-L640-r3/results.csv",
+      "sha256": "a5be2fb8729cf46ae82f24952229f377d4c585c6d232e0fa03fdc1060af10c3e"
+    }
+  ]
+}

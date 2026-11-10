@@ -1,0 +1,11 @@
+system:           gateann
+repository:       /home/liuliyuan/cs_system_lab/fvs-course-lab/systems/GateANN-public
+expected commit:  71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd
+actual commit:    71e87cbf0e25c0400c0109dd25a64a7c4dccc9dd
+dataset tier:     /home/liuliyuan/cs_system_lab/fvs-course-lab/datasets/yfcc_course_v1/formal_1000000
+base:             1000000 x 192 uint8
+binary [OK]: /home/liuliyuan/cs_system_lab/fvs-course-lab/systems/GateANN-public/build/tests/build_disk_index
+binary [OK]: /home/liuliyuan/cs_system_lab/fvs-course-lab/systems/GateANN-public/build/tests/search_disk_index_yfcc
+cmake [OK]:  CMAKE_BUILD_TYPE=Release
+cmake [OK]:  USE_AIO=ON
+DOCTOR PASS
