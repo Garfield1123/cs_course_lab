@@ -1,0 +1,173 @@
+{
+  "archive_name": "budget-20261110-143518-ec7e5e19-results-20261110-144114.tar.gz",
+  "archive_sha256": "ea8c7a95cd8d9c00ca9aba38c578cc1e882f83e00bad3a59d3b5e78f180b9f23",
+  "archive_file_count": 112,
+  "unique_runs": 24,
+  "repeat_count": 3,
+  "queries_per_cell": 200,
+  "total_queries": 4800,
+  "verified_raw_hashes": 72,
+  "recomputed_summary_rows": {
+    "measurements.csv": 24,
+    "sweep_summary.csv": 32,
+    "strategy_measurements.csv": 36,
+    "strategy_summary.csv": 48,
+    "paired_deltas.csv": 24
+  },
+  "source_hash_matches": {
+    "optimization/experiment.py": true,
+    "optimization/adaptive_budget.py": true,
+    "adapters/gateann_adapter.py": true,
+    "adapters/_common.py": true,
+    "adapters/versions.json": true
+  },
+  "doctor_aio_release": true,
+  "raw_results_checks": [
+    {
+      "key": "low-L320-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L320-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L640-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L320-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L640-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L480-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L640-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L480-r1",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L320-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L640-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L320-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L320-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L640-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L480-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L480-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L640-r2",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L320-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L480-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L320-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L320-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L480-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "medium-L640-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "high-L640-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    },
+    {
+      "key": "low-L640-r3",
+      "exit_code": 0,
+      "raw_output_and_csv_match": true,
+      "three_sha256_match": true
+    }
+  ],
+  "input_data_and_index_rehashed_here": false,
+  "limits": "Data/index/binary absent by design; their hashes and environment are recorded by the Linux runner. No independent neighbor-level Recall recomputation."
+}
